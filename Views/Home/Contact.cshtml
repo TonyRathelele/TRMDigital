@@ -1,0 +1,195 @@
+@{
+    ViewData["Title"] = "Contact Us";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding contact-section">
+    <div class="container">
+
+        <div class="section-heading text-center section-heading-centred">
+            <span class="section-label">CONTACT US</span>
+
+            <h2>
+                Have a project?
+                <span>Let's talk.</span>
+            </h2>
+
+            <p>
+                Tell us what you need and TRM Digital will help you find
+                the right solution.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Contact Details -->
+            <div class="col-lg-5">
+                <div class="contact-information">
+
+                    <h3>Contact information</h3>
+
+                    <p>
+                        Contact us for a quotation, consultation or technical
+                        support.
+                    </p>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+
+                        <div>
+                            <span>Email us</span>
+                            <a href="mailto:tonyrathelele@gmail.com">
+                                info@trmdigital.co.za
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+
+                        <div>
+                            <span>Call or WhatsApp</span>
+                            <a href="tel:+27726309462">
+                                +27 72 630 9462
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+
+                        <div>
+                            <span>Location</span>
+                            <p>Johannesburg, South Africa</p>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <i class="bi bi-clock"></i>
+
+                        <div>
+                            <strong>Business hours</strong>
+                            <span>Monday–Friday: 08:00–17:00</span>
+                            <span>Saturday: 09:00–13:00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="contact-form-card">
+
+                    <form id="contactForm">
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">
+                                    Full name
+                                </label>
+
+                                <input type="text"
+                                       id="fullName"
+                                       name="FullName"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">
+                                    Email address
+                                </label>
+
+                                <input type="email"
+                                       id="email"
+                                       name="Email"
+                                       class="form-control"
+                                       placeholder="name@example.com"
+                                       required />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">
+                                    Phone number
+                                </label>
+
+                                <input type="tel"
+                                       id="phone"
+                                       name="Phone"
+                                       class="form-control"
+                                       placeholder="+27..." />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="service" class="form-label">
+                                    Service required
+                                </label>
+
+                                <select id="service"
+                                        name="Service"
+                                        class="form-select"
+                                        required>
+
+                                    <option value="">
+                                        Select a service
+                                    </option>
+
+                                    <option>Web Development</option>
+                                    <option>Mobile Application</option>
+                                    <option>Custom Software</option>
+                                    <option>Website Hosting</option>
+                                    <option>Website Maintenance</option>
+                                    <option>PC or Laptop Repair</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">
+                                    Tell us about your project
+                                </label>
+
+                                <textarea id="message"
+                                          name="Message"
+                                          class="form-control"
+                                          rows="5"
+                                          placeholder="Describe what you need..."
+                                          required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit"
+                                        class="contact-submit-button">
+
+                                    Send Message
+                                    <i class="bi bi-send"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Map -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps?q=Tembisa,South+Africa&output=embed"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="TRM Digital location">
+            </iframe>
+        </div>
+
+    </div>
+</section>
